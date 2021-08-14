@@ -1,0 +1,256 @@
+@import "~bootstrap/scss/bootstrap";
+.App {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  position: relative;
+  background: yellow;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.Wrapper {
+  width: 650px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+.formWrapper {
+    width: 580px;
+    height: auto;
+    background: white;
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
+    border-radius: 20px;
+    bottom: 75px;
+    padding: 30px;
+    box-sizing: border-box;
+    padding-top: 150px;
+}
+
+.cardWrapper {
+  width: 400px;
+  height: 250px;
+  background-color: darkgray;
+  color: white;
+  border-radius: 16px;
+  z-index: 100;
+  padding: 26px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./assets/22.jpeg") 100% 100% no-repeat;
+  position: relative;
+  z-index: 1;
+  top: 40px;
+  box-shadow:-1px -4px 47px 1px rgba(0, 0, 0, 0.9);
+
+
+  .cardHeader {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+
+    .cardTypeWrap {
+      width: 80px;
+      height: 50px;
+    }
+
+    img.cardChip {
+      width: 60px;
+      height: 50px;
+    }
+
+    .cardTypeWrap.MAESTRO{background: url('./assets/maestro.png') 100% 100% no-repeat;background-size: contain;}
+    .cardTypeWrap.MASTERCARD{background: url('./assets/mastercard.png') 100% 100% no-repeat;background-size: contain;}
+    .cardTypeWrap.VISA{background: url('./assets/visa.png') 100% 100%  no-repeat;background-size: contain;}
+    .cardTypeWrap.AMEX{background: url('./assets/amex.png') 100% 100%  no-repeat;background-size: contain;}
+    .cardTypeWrap.RUPAY{background: url('./assets/rupay.png') 100% 100%  no-repeat;background-size: contain;width: 130px;}
+  }
+
+  .cardBody {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    letter-spacing: 4px;
+  }
+
+  .cardFooter {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .cardFooterSection {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+    .footerHeading {
+      font-size: 14px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin-bottom: 3px;
+    }
+  }
+}
+.cardBackHeader{
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  margin-top: 30px;
+}
+.cardBackBody{
+  div{
+    text-align: right;
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    right: 0px;
+    top: -24px;
+    font-weight: normal;
+  }
+  position: relative;
+  width: 93%;
+  height: 40px;
+  background-color: white;
+  border-radius: 4px;
+  margin: 0px auto;
+  margin-top: 64px;
+  color: black;
+  text-align: right;
+  font-size: 18px;
+}
+.cardBackFooter{
+  width: 100%;
+  height: 60px;
+  margin-top: 32px;
+  padding: 18px;
+  box-sizing: border-box;
+  .cardHeader{
+    display: flex;
+    justify-content: flex-end;
+    .cardTypeWrap{
+      float: right;
+    }
+  }
+  
+  
+}
+.cardWrapper.BACK{
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+}
+
+.cardWrapper.AMEX {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./assets/2.jpeg) 100% 100% no-repeat;
+}
+.cardWrapper.VISA {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./assets/22.jpeg) 100% 100% no-repeat;
+}
+.cardWrapper.MASTERCARD {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./assets/6.jpeg) 100% 100% no-repeat;
+}
+.cardWrapper.MAESTRO {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./assets/25.jpeg) 100% 100% no-repeat;
+}
+.cardWrapper.RUPAY {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./assets/14.jpeg) 100% 100% no-repeat;
+}
+
+
+.formInputWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px 0;
+
+  label {
+    margin: 6px 0;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(95, 93, 93);
+  }
+
+  .form-select,
+  .form-control {
+    padding: 13px;
+  }
+
+  .form-select {
+    width: 145px;
+  }
+
+  Button {
+    margin: 20px 0;
+    width: 100%;
+    padding: 12px;
+  }
+}
+.formDropDownWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  div {
+    text-align: left;
+  }
+
+  .form-select {
+    float: left;
+    margin-right: 10px;
+  }
+}
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
