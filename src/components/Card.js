@@ -47,7 +47,7 @@ export default function Card({ cardInput, cardSwitch }) {
     let card =
       cardInput?.cardNumber?.length > 0
         ? CardTypes(cardInput?.cardNumber?.split(" ").join(""))
-        : "VISA";
+        : DEFAULT_CARD_TYPE;
     if (card) {
       setCardType(card);
     }

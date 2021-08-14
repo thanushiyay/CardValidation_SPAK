@@ -1,6 +1,11 @@
 import React from "react";
 import Chip from "../assets/chip.png";
 
+const CARD_SWITCH = {
+  FRONT: "FRONT",
+  BACK: 'BACK'
+}
+
 export default function GenericCard({
   cardNumber,
   cardHolder,
@@ -14,7 +19,7 @@ export default function GenericCard({
   return (
     <>
       <div className={"cardWrapper " + cardType + " " + cardSwitch}>
-        {cardSwitch === "FRONT" ? (
+        {cardSwitch ===  CARD_SWITCH.FRONT ? (
           <div className="cardHeader">
             <img src={Chip} className="cardChip" alt="Chip Image" />
             <div className={"cardTypeWrap " + cardType}  alt={cardType + "Image"}/>
@@ -23,7 +28,7 @@ export default function GenericCard({
           <div className="cardBackHeader"></div>
         )}
         <div className="cardBody">
-          {cardSwitch === "FRONT" ? (
+          {cardSwitch === CARD_SWITCH.FRONT ? (
             cardNumber
           ) : (
             <div className="cardBackBody">
@@ -33,7 +38,7 @@ export default function GenericCard({
           )}
         </div>
         <div className="cardFooter">
-          {cardSwitch === "FRONT" ? (
+          {cardSwitch === CARD_SWITCH.FRONT ? (
             <>
               <div className="cardFooterSection">
                 <span className="footerHeading">Card Holder</span>

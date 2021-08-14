@@ -1,6 +1,5 @@
 export default function CardTypes(cardNum) {
 
-
   var payCardType = '';
   const regexMap = [
     {regEx: /^4[0-9]{5}/ig,cardType: "VISA"},
