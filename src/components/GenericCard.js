@@ -14,16 +14,16 @@ export default function GenericCard({
   return (
     <>
       <div className={"cardWrapper " + cardType + " " + cardSwitch}>
-        {cardSwitch == "FRONT" ? (
+        {cardSwitch === "FRONT" ? (
           <div className="cardHeader">
-            <img src={Chip} className="cardChip" />
-            <div className={"cardTypeWrap " + cardType} />
+            <img src={Chip} className="cardChip" alt="Chip Image" />
+            <div className={"cardTypeWrap " + cardType}  alt={cardType + "Image"}/>
           </div>
         ) : (
           <div className="cardBackHeader"></div>
         )}
         <div className="cardBody">
-          {cardSwitch == "FRONT" ? (
+          {cardSwitch === "FRONT" ? (
             cardNumber
           ) : (
             <div className="cardBackBody">

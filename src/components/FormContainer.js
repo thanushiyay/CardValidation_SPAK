@@ -61,7 +61,7 @@ export default function FormContainer(props) {
     e.preventDefault();
 
     let cardNumberValue = cardInput.cardNumber.split(" ").join("");
-    if (cardNumberValue.match(cardNumberRegex) && cardNumberValue.length == 16 && CardTypes(cardNumberValue) != '') {
+    if (cardNumberValue.match(cardNumberRegex) && cardNumberValue.length === 16 && CardTypes(cardNumberValue) !== '') {
       setIsCardNumberError(false);
     } else {
       setIsCardNumberError(true);
