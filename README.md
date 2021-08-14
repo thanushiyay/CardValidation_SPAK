@@ -28,4 +28,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 This app is deployed in Netlify. To view the app, click below:
  
-https://naughty-bhaskara-3a3054.netlify.app/
+https://competent-davinci-65cbd5.netlify.app/
