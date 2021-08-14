@@ -4,7 +4,7 @@
   width: 100%;
   height: auto;
   position: relative;
-  background: yellow;
+  background: skyblue;
 }
 
 .App-logo {
@@ -64,6 +64,7 @@
     padding: 30px;
     box-sizing: border-box;
     padding-top: 150px;
+    padding-bottom:20px;
 }
 
 .cardWrapper {
@@ -84,8 +85,7 @@
   position: relative;
   z-index: 1;
   top: 40px;
-  box-shadow:-1px -4px 47px 1px rgba(0, 0, 0, 0.9);
-
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 
   .cardHeader {
     display: flex;
